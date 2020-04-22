@@ -25,6 +25,11 @@ These files are only recommended to be used in the SOF-ELK VM distribution at th
 ## Contents by directory
 
 * `/configfiles/`: These files conatain parsing/tagging/formatting/etc logic for individual file types as well as output configuration.
+  * Nomenclature: first digit is for the category
+    * `0XXX-input-N    * `0XXX-input-NAME.conf`: input configurations files
+    * `1XXX-preprocess-NAME.conf`: preprocess configurations files
+    * `6XXX-filter-NAME.conf`: filter configurations files
+  * 
 * `/configfiles-UNSUPPORTED/`: These configuration files are either not ready for operational use, in testing, or otherwise staged/stashed.
 * `/doc/`: Documentation.  Always a work in progress.
 * `/grok-patterns/`: Custom parsing patterns used by the files in the `/configfiles/` directory.
