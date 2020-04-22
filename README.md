@@ -26,7 +26,7 @@ These files are only recommended to be used in the SOF-ELK VM distribution at th
 
 * `/configfiles/`: These files conatain parsing/tagging/formatting/etc logic for individual file types as well as output configuration.
   * Nomenclature: first digit is for the category
-    * `0XXX-input-N    * `0XXX-input-NAME.conf`: input configurations files
+    * `0XXX-input-NAME.conf`: input configurations files
     * `1XXX-preprocess-NAME.conf`: preprocess configurations files
     * `6XXX-filter-NAME.conf`: filter configurations files
   * 
