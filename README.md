@@ -26,11 +26,15 @@ These files are only recommended to be used in the SOF-ELK VM distribution at th
 
 * `/configfiles/`: These files conatain parsing/tagging/formatting/etc logic for individual file types as well as output configuration.
   * Nomenclature: first digit is for the category
-    * `0XXX-input-NAME.conf`: input configurations files
-    * `1XXX-preprocess-NAME.conf`: preprocess configurations files
-    * `6XXX-filter-NAME.conf`: filter configurations files
-  * 
+    * `0XXX-input-NAME.conf`: input configuration files
+    * `1XXX-preprocess-NAME.conf`: preprocess filter configuration files
+    * `6XXX-filter-NAME.conf`: filter configuration files
+    * `8XXX-postprocess-NAME.conf`: postprocess filter configuration files
+    * `9XXX-output-NAME.conf`: output configuration files
+
 * `/configfiles-UNSUPPORTED/`: These configuration files are either not ready for operational use, in testing, or otherwise staged/stashed.
+  * Nomenclature: globaly same as `configfiles`
+
 * `/doc/`: Documentation.  Always a work in progress.
 * `/grok-patterns/`: Custom parsing patterns used by the files in the `/configfiles/` directory.
 * `/kibana/`: These files define the Kibana dashboards and associated files for individual data types.  These correspond with the parsing completed by the Logstash files in the `/configfiles/` directory, so they probably won't work on your own Logstash instance without some tweaking.  To load these to the Kibana interface, run the `/supporting-scripts/load_all_dashboards.sh` script.
